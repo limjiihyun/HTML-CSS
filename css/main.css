@@ -7,12 +7,12 @@
     src:url(../font/온글잎_의청수_재선체/Ownglyph_2022_UWY_Jae_Seon-Rg.ttf);
 }
 .profile{
-    width:250px; 
+    width:260px; 
     display: block;
-    margin-left: 30%; 
+    margin-left: 40%; 
     margin-right: auto;
-    margin-top: 30px;
-    border-radius: 40px 40px / 40px 40px;
+    margin-top: 10px;
+    margin-left: 37%;
 
 }
 .text{
@@ -23,6 +23,7 @@
     margin-left: 100px;
     font-weight: bold;
     float:left;
+    color: #eee;
 }
 .text1{
     font-size: 100px;
@@ -42,10 +43,10 @@
 
 .box{
     width: 1400px;
-    height: 700px;
+    height: 650px;
     background-color: #fcfce8;
     margin:auto;
-    margin-top: 5%;
+    margin-top: 7%;
 
     padding-top: 4%;
     border-radius: 30px 30px / 30px 30px;
@@ -55,16 +56,19 @@
 
 .header{
     width: 100%;
-    height: 120px;
+    height: 140px;
     background: fcfce8;
-    background-color: aqua;
+    background-color: fcfce8;
+    margin-top: 10px;
+    margin-right: 10%;
 }
 .left-menu{
     width: 30%;
     height: 400px;
-    background: fcfce8;
+    background: f1f1e6;
     display: inline-block;
     vertical-align: top;
+    margin-top: -10%;
 }
 .right{
     width: 70%;
@@ -74,26 +78,31 @@
 }
 .footer{
     width: 100%;
-    height: 100px;
+    height: 75px;
     background: fcfce8;
     clear:both;
+    vertical-align: top;
+    float: left;
+    margin-top: -4%;
 }
 .textbox1{
     width: 90%;
-    height: 400px;
+    height: 300px;
     margin-top: 0%;
-    background: #BB2649;
+    background: f1f1e6;
     font-size: 80px;
 
 }
 .navbar li{
     display: inline-block;
-    width: 80px;
+    width: 150px;
     text-align: center;
     background-color: #eee;
     padding: 10px;
     border-radius: 5px;
-    right: 3px;
+    right: 5px;
+    margin-left: 10%;
+    font-size: 30px;
 }
 .main-background{
     width: 100%;
@@ -175,4 +184,123 @@ table{
   
   .blink {
     animation: blink-effect 1s step-end infinite;
+  }
+  .tag1{
+    display: inline-block;
+    width: 80px;
+    height: 28px;
+    text-align: center;
+    background-color: #232323;
+    padding: 10px;
+    border-radius: 20px;
+    right: 3px;
+  }
+  .tag2{
+    display: inline-block;
+    width: 150px;
+    height: 28px;
+    text-align: center;
+    background-color: #232323;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+  .tag3{
+    display: inline-block;
+    width: 190px;
+    height: 28px;
+    text-align: center;
+    background-color: #232323;
+    padding: 10px;
+    border-radius: 20px;
+    right: 1px;
+    margin-left: 10px;
+  }
+  .tag4{
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    text-align: center;
+    background-color: #232323;
+    padding: 10px;
+    border-radius: 20px;
+    right: 1px;
+    margin-left: 10px;
+  }
+  .tag5{
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    text-align: center;
+    background-color: #232323;
+    padding: 10px;
+    border-radius: 20px;
+    right: 1px;
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+  .tag6{
+    display: inline-block;
+    width: 120px;
+    height: 28px;
+    text-align: center;
+    background-color: #232323;
+    padding: 10px;
+    border-radius: 20px;
+    right: 1px;
+    margin-left: 10px;
+    margin-top: 20px;
+
+  }
+  .tag7{
+    display: inline-block;
+    width: 150px;
+    height: 28px;
+    text-align: center;
+    background-color: #232323;
+    padding: 10px;
+    border-radius: 20px;
+    right: 1px;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  .tag8{
+    display: inline-block;
+    width: 150px;
+    height: 28px;
+    text-align: center;
+    background-color: #232323;
+    padding: 10px;
+    border-radius: 20px;
+    right: 1px;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  .tag9{
+    display: inline-block;
+    width: 150px;
+    height: 28px;
+    text-align: center;
+    background-color: #232323;
+    padding: 10px;
+    border-radius: 20px;
+    right: 1px;
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+  .tag10{
+    display: inline-block;
+    width: 150px;
+    height: 28px;
+    text-align: center;
+    background-color: #232323;
+    padding: 10px;
+    border-radius: 20px;
+    right: 1px;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  .text5{
+    font-weight: bold;
+    font-size: 60px;
   }
