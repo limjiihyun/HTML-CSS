@@ -7,7 +7,7 @@
      <body style="background: #BB2649" id="start">
 
         <hr class="hr-top"/>
-        <div class="box2">
+        <div class="box2 fade">
             <div class="start">
                 Hello, ZiHyunWorld!
             </div>
@@ -21,6 +21,26 @@
             </div>
         </div>
         <hr class="hr-bottom"/>
+
+        <script>
+
+            let observer= new IntersectionObserver((e)=>{
+               e.forEach((박스)=>{
+                 if(박스.isIntersecting){
+                 박스.target.style.opacity=1;
+                 } 
+               })
+            })
+     
+            let div = document.querySelectorAll('div')
+            observer.observe(div[0])
+            observer.observe(div[1])
+            observer.observe(div[2])
+            observer.observe(div[3])
+     
+     
+         </script>
+     
 </head>
 <body>
     

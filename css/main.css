@@ -49,7 +49,7 @@
     color: blue;
 }
 .text4{
-  
+  font-size: 65px;
   font-weight: bold;
   text-align: center;
   color: #eee;
@@ -61,7 +61,7 @@
   float:left;
   color: black;
   font-size: small;
-  font-size: 60px;
+  font-size: 40px;
 }
 .text6{
   font-weight: bold;
@@ -82,7 +82,7 @@
 }
 .box1{
   width: 1400px;
-  height: 1700px;
+  height: 650px;
   background-color: #fcfce8;
   margin:auto;
   margin-top: 7%;
@@ -90,6 +90,8 @@
   padding-top: 4%;
   border-radius: 30px 30px / 30px 30px;
   font-family: '온글잎';
+  box-shadow: 20px 20px black;
+
 }
 
 .header{
@@ -120,7 +122,6 @@
     background: fcfce8;
     clear:both;
     vertical-align: top;
-    float: left;
     margin-top: -75%;
 }
 .textbox1{
@@ -143,16 +144,7 @@
     font-size: 30px;
    
 }
-.main-background{
-    width: 100%;
-    height: 500px;
-    background-image: url(../image/swim.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: brightness(70%);
-    padding: 1px;
-}
+
 .main-title{
     color: white;
     font-size:40px;
@@ -197,18 +189,6 @@ table{
     font-weight: bold;
 }
 
-  
-  .typing-demo {
-    width: 25ch;
-    /* ch : 25개의 문자열을 포함 */
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-family: monospace;
-    font-size: 2em;
-  }
-  
   @keyframes blink-effect {
     50% {
       opacity: 0;
@@ -333,4 +313,14 @@ table{
     margin-left: 10px;
     margin-top: 20px;
   }
-  
+
+  .scroll::-webkit-scrollbar {
+    overflow-y: scroll; height: 650px;
+    display: none; /* Chrome, Safari, Opera*/
+    opacity: 0;
+    transition:all 0.5s;
+}
+.fade{
+  opacity: 0;
+  transition:all 1s;
+}
