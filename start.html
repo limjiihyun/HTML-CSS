@@ -6,8 +6,9 @@
      <title>Document</title>
      <body style="background: #BB2649" id="start">
 
-        <hr class="hr-top"/>
-        <div class="box2 fade">
+      <form action="/add" method="POST">  
+      <hr class="hr-top"/>
+        <div class="box2 fade" id="background" onClick="location.href='index.html'">
             <div class="start">
                 Hello, ZiHyunWorld!
             </div>
@@ -21,6 +22,69 @@
             </div>
         </div>
         <hr class="hr-bottom"/>
+      </form>
+        <style>
+            @font-face{
+    font-family:'광양햇살체';
+    src:url(../font/광양햇살체B/Gwangyang\ Sunshine\ Bold\(TTF용\).ttf);
+}
+@font-face{
+    font-family:'온글잎';
+    src:url(../font/온글잎_의청수_재선체/Ownglyph_2022_UWY_Jae_Seon-Rg.ttf)format('truetype');
+}
+@import url(//font/온글잎_의청수_재선체/Ownglyph_2022_UWY_Jae_Seon-Rg.ttf);
+          .hr-top {
+    width : 80%;
+    margin-top: 80px;
+    border : 4px;
+    border-top: 3px solid #f1f1e6;
+  }
+  .box2{
+  width: 1400px;
+  height: 600px;
+  background-color: #BB2649;
+  margin:auto;
+  margin-top: 5%;
+
+  padding-top: 4%;
+  border-radius: 40px 40px / 40px 40px;
+  font-family: '온글잎';
+}
+.fade{
+  opacity: 0;
+  transition:all 1s;
+}
+.start{
+    font-family: '온글잎';
+    font-size: 140px;
+    text-align: center;
+    color: #eee;
+    font-weight: bold;
+}
+.text4{
+    font-family: '온글잎';
+  font-size: 65px;
+  font-weight: bold;
+  text-align: center;
+  color: #eee;
+  font-weight: bold;
+}
+@keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .blink {
+    animation: blink-effect 1s step-end infinite;
+  }
+  .hr-bottom{
+    width : 80%;
+    border : 4px;
+    border-top: 3px solid #f1f1e6;
+    position: left;
+}
+        </style>
 
         <script>
 
@@ -39,6 +103,13 @@
             observer.observe(div[3])
      
      
+         </script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+
+         <script>
+           $('#background').on('click', function(요청, 응답){
+ 응답.sendFile(__dirname +'/index.html')
+ })
          </script>
      
 </head>
