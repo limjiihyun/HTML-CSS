@@ -3,7 +3,7 @@ const { upload } = require("../image/smile.jpg");
 var app = express.Router();
 
 // 이미지 업로드
-app.post("/upload", upload.single("img"), async (req, res) => {
+app.post("/image", upload.single("img"), async (req, res) => {
 
   const imgfile = req.file;
   console.log(imgfile);

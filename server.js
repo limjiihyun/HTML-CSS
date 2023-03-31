@@ -20,3 +20,14 @@ app.get('/about.html', function(요청, 응답) {
 app.get('/project.html', function(요청, 응답) { 
   응답.sendFile(__dirname +'/project.html')
 })
+
+app.get('/traffic_about.html', function(요청, 응답) { 
+  응답.sendFile(__dirname +'//traffic_about.html')
+})
+
+app.get('/imgs', function(요청, 응답){
+  fs.readFile('smile.jpg', function(error, data){
+    응답.writeHead(200, {'Content-Type': 'text/html'});
+    res.end(data);
+  })
+})
