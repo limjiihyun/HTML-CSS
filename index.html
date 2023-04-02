@@ -18,8 +18,11 @@
 <body style="background: #BB2649">
     <form action="/add" method="POST">
     <div class="box scroll fade" style="overflow-y: scroll;">
+      <div class="git"><img class="gitimg" onClick="location.href='https://github.com/limjiihyun'" src="https://i.imgur.com/uqwClMi.png"/></div>
+              <div class="tistory"><img class="tistoryimg" onClick="location.href='https://dlawlgus40.tistory.com/'" src="https://i.imgur.com/EB1Ucet.png"/></div>
+              <div class="blog"><img class="blogimg" onClick="location.href='https://m.blog.naver.com/dlawlgus400'" src="https://i.imgur.com/RIQ59oe.png"/></div>
         <div class="container col-md-6 fade-in">
-            <div class="header">
+            <div class="header">          
                 <p class="text1">This is ZiHyun 😊</p>
             </div>
             <div class="left-menu"><img class="profile" src="https://i.imgur.com/tgx4OsO.jpeg"/><!--
@@ -27,14 +30,14 @@
                 <div class="text tag2">#2001.02.13</div><div class="text tag3">#한밭대_정보통신공학과</div><!--
                      --><div class="text tag4">#휴학생</div><div class="text tag5">#ESTJ</div><div class="text tag6">#긍정적인</div><!--
                      --><div class="text tag7">#도전을_사랑함</div><div class="text tag8">#배우는것을_좋아함</div><!--
-                     --><div class="text tag9">#주니어_웹개발자</div><div class="text tag10">#병아리_개발자</div></div>
+                     --><div class="text tag9">#주니어_웹개발자</div><div class="text tag10">#병아리_개발자</div><div class="text tag10">#IMPORT총무</div></div>
             <div class="footer">
                 
             <div class="text6">
-                <li class="navbar" id="about" onClick="location.href='about.html'"><a href="#">📌 About_ZiHyun</a></li>
-                <li class="navbar1" id="project" onClick="location.href='project.html'"><a href="#">📌 ZiHyun's_Project</a></li>
-                <li class="navbar1" onClick="location.href='https://github.com/limjiihyun'"><a href="#">📌 ZiHyun's_GitHub</a></li>
-                <li class="navbar1"onClick="location.href='https://dlawlgus40.tistory.com/'"><a href="#">📌 ZiHyun's_Tistory</a></li>
+                <li class="navbar" id="about" onClick="location.href='about.html'"><a href="#">📌<br> About_ZiHyun</a></li>
+                <li class="navbar1" id="project" onClick="location.href='project.html'"><a href="#">📌 <br>ZiHyun's_Project</a></li>
+                <li class="navbar1" id="import" onClick="location.href='import.html'"><a href="#">📌 <br>What's Import</a></li>
+                <li class="navbar1"onClick="location.href='https://dlawlgus40.tistory.com/'"><a href="#">📌<br>Zihyun_OnCoding</a></li>
             </div>
         </div>
             </div>
@@ -44,6 +47,47 @@
    </form>
    
     <style>
+       .blog{
+        width: 9%;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -3%;
+  margin-left: 72%;  
+  background-color: #fcfce8;
+  text-align: center;
+  border-radius: 30px 30px / 30px 30px;
+      }
+      .blogimg{
+        width: 40px;
+      }
+      .tistory{
+        width: 9%;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -3%;
+  margin-left: 82%;  
+  background-color: #fcfce8;
+  text-align: center;
+  border-radius: 30px 30px / 30px 30px;
+      }
+      .tistoryimg{
+        width: 30px;
+      }
+      .gitimg{
+        width: 45px;
+        margin-top: -4%;
+        margin-left: 43%;
+      }
+      .git{
+        width: 9%;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0%;
+  margin-left: 75%;  
+  background-color: #fcfce8;
+  text-align: center;
+  border-radius: 30px 30px / 30px 30px;     
+ }
         .profile{
     width: 300px; 
     display: block;
@@ -139,7 +183,7 @@
 }
 .navbar li{
     display: inline-block;
-    width: 150px;
+    width: 90x;
     text-align: center;
     background-color: #eee;
     padding: 10px;
@@ -151,7 +195,7 @@
 }
 .navbar{
   display: inline-block;
-    width: 150px;
+    width: 130px;
     text-align: center;
     background-color: #eee;
     padding: 10px;
@@ -324,6 +368,9 @@
   })
   $('#project').on('click', function(요청, 응답){
   응답.sendFile(__dirname +'/project.html')
+  })
+  $('#import').on('click', function(요청, 응답){
+  응답.sendFile(__dirname +'/import.html')
   })
           </script>
  
