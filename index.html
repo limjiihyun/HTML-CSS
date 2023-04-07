@@ -37,7 +37,7 @@
                 <li class="navbar" id="about" onClick="location.href='about.html'"><a href="#">📌<br> About_ZiHyun</a></li>
                 <li class="navbar1" id="project" onClick="location.href='project.html'"><a href="#">📌 <br>ZiHyun's_Project</a></li>
                 <li class="navbar1" id="import" onClick="location.href='import.html'"><a href="#">📌 <br>What's Import</a></li>
-                <li class="navbar1"onClick="location.href='https://dlawlgus40.tistory.com/'"><a href="#">📌<br>Zihyun_OnCoding</a></li>
+                <li class="navbar1" id="oncoding" onClick="location.href='oncoding.html'"><a href="#">📌<br>Zihyun_OnCoding</a></li>
             </div>
         </div>
             </div>
@@ -372,6 +372,10 @@
   $('#import').on('click', function(요청, 응답){
   응답.sendFile(__dirname +'/import.html')
   })
+  $('#oncoding').on('click', function(요청, 응답){
+  응답.sendFile(__dirname +'/oncoding.html')
+  })
+
           </script>
  
 

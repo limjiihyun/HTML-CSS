@@ -17,25 +17,56 @@
     <title>Document</title>
 </head>
 <body style="background: #BB2649">
+    <form action="/add" method="POST">
+
 
     <div class="box scroll fade" style="overflow-y: scroll;">
-      <div class="bepage" id="home" onClick="location.href='index.html'"><img class="beforeimg" src="https://i.imgur.com/CHV0DHi.png"></div>
+        <div class="bepage" id="home" onClick="location.href='index.html'"><img class="beforeimg" src="https://i.imgur.com/CHV0DHi.png"></div>
+        <div class="repage" id="restart" onClick="location.href='project.html'"><img class="restartimg" src="https://i.imgur.com/lnYOrEj.png"></div> 
 
         <div class="container col-md-6 fade-in"></div>
-        <p class="text7" style="font-family: 'Acme', sans-serif;">ZiHyun_Project 🖥️</p>
-        <div class="box3"  style="font-family: 'Do Hyeon', sans-serif;"><p class="text8"> ✅한밭대학교 교통관리 서비스 앱</p><img src="https://i.imgur.com/SkXUK6y.png" class="img1">
-        <div class="text9">사용기술: 안드로이드 스튜디오, JAVA</div><div class="button blink" id="traffic" onClick="location.href='traffic_about.html'">자세히 보려면 Click!</div></div>
+        <p class="text7" style="font-family: 'Do Hyeon', sans-serif;">✅ 쇼핑몰 웹 서비스</p>
+        <div class="left-menu"><img src="https://i.imgur.com/AVxjvzf.png" class="shopingmall_img"><!--
+        --><img src="https://i.imgur.com/pM5NKn5.png" class="write_img"><img src="https://i.imgur.com/fVMZ9MX.png" class="list_img"></div><div class="right">
+            <div class="text12">제작 목적: NodeJs와 MongoDB를 학습하기 위해 간단한 게시판 서비스를 클론코딩함. </div>
+<div class="text12">사용 기술: <span style="color: green;"> React </span> </div>
+<div class="text12">세부 기능: 로그인, 회원가입 기능 / 회원기능 을 포함한 게시판 / 게시물 발행 기능 / 게시물 검색 기능/ 유저간 채팅 기능</div>
+    
+        </div>
+        <div class="footer">  
+        </div>
+    </form>
         
-        <div class="box4"><p class="text8"> ✅간단한 게시판 웹서비스</p><img src="https://i.imgur.com/0UDhqhJ.png" class="img2">
-            <div class="text11">사용기술: Node.js , MongoDB</div><div class="button1 blink" id="todoapp" onClick="location.href='todoapp.html'">자세히 보려면 Click!</div></div>
-        <div class="box5"><p class="text8"> ✅쇼핑몰 웹 서비스</p><img src="https://i.imgur.com/AVxjvzf.png" class="img2">
-            <div class="text10">사용기술: React</div><div class="button1 blink" id="shopingmall" onClick="location.href='shopingmall.html'">자세히 보려면 Click!</div></div>
-        </div>
-        </div>
   
 
-        <style>
-          .bepage{
+<style>
+  .repage{
+        width: 9%;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -3%;
+  margin-left: 75%;  
+  background-color: rgb(240, 227, 238);
+  text-align: center;
+  border-radius: 30px 30px / 30px 30px;
+      }
+      .restartimg{
+        width: 30%;
+
+      }
+  .win{
+    width: 50%;
+    float: left;
+    margin-top: 14%;
+    margin-left: -25%;
+  }
+  .win2{
+    width: 50%;
+    float: left;
+    margin-top: -38%;
+    margin-left: 55%;
+  }
+   .bepage{
         width: 9%;
   font-size: 20px;
   font-weight: bold;
@@ -49,14 +80,32 @@
         width: 30%;
 
       }
+.shopingmall_img{
+    width: 350px;
+  display: block;
+  margin-left: 15%;
+  margin-top: 30%;
+}   
+.write_img{
+    width: 470px;
+  display: block;
+  margin-left: 3%;
+  margin-top: 5%;
+}
+.list_img{
+    width: 470px;
+  display: block;
+  margin-left: 3%;
+  margin-top: 5%;
+}
 .img1{
-  width: 150px;
+  width: 300px;
   display: block;
   margin-left: 10%;
 
 }
 .img2{
-  width: 230px;
+  width: 300px;
   display: block;
   margin-left: 20%;
 }
@@ -79,6 +128,15 @@
   background-color: rgb(237, 146, 221);
   text-align: center;
   border-radius: 30px 30px / 30px 30px;
+}
+.text12{
+    font-size: 28px;
+    border: 80px;
+    margin-top: 27px;
+    margin-left: 90px;
+    font-weight: bold;
+    float:left;
+    color: black;
 }
 .text{
     
@@ -125,10 +183,10 @@
   font-size: 60px;
 }
 .text7{
-  font-size: 100px;
+  font-size: 70px;
   font-weight: bold;
   margin-top: 0%;
-  margin-left: 15%;
+  margin-left: 30%;
 }
 .text8{
   font-size: 31px;
@@ -138,19 +196,19 @@
   margin-left: 8%;
 }
 .text9{
-  font-size: 27px;
+  font-size: 40px;
   font-weight: bold;
   margin-top: -50%;
   margin-left: 50%;
 }
 .text10{
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   margin-top: 3%;
   margin-left: 25%;
 }
 .text11{
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   margin-top: 3%;
   margin-left: 15%;
@@ -237,9 +295,9 @@
     margin-top: -10%;
 }
 .right{
-    width: 70%;
-    height: 400px;
-    background: fcfce8;
+    width: 60%;
+    height: 270px;
+    background: f1f1e6;
     display: inline-block;
 }
 .footer{
@@ -369,22 +427,15 @@ table{
      
          </script>
 
-<script>
-  $('#traffic').on('click', function(요청, 응답){
-응답.sendFile(__dirname +'/traffic_about.html')
-})
-
-$('#home').on('click', function(요청, 응답){
-응답.sendFile(__dirname +'/index.html')
-})
-$('#todoapp').on('click', function(요청, 응답){
-응답.sendFile(__dirname +'/todoapp.html')
-})
-$('#shopingmall').on('click', function(요청, 응답){
-응답.sendFile(__dirname +'/shopingmall.html')
-})
-</script>
+         <script>
+            $('#home').on('click', function(요청, 응답){
+          응답.sendFile(__dirname +'/index.html')
+          })
+          </script>
     
+            
+
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 
